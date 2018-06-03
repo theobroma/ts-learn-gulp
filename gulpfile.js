@@ -7,8 +7,7 @@ gulp.task('tsc', function() {
   return tsProject
     .src()
     .pipe(tsProject())
-    .js.pipe(gulp.dest('dist'))
-    .pipe(notify('Scripts Compiled'));
+    .js.pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function() {
