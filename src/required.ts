@@ -7,5 +7,6 @@ interface Props {
 
 const obj: Props = { a: 5 };
 
-const obj2: Required<Props> = { a: 5 };
-const obj3: MyRequired<Props> = { a: 5 };
+// Uncomment to see error
+// const obj2: Required<Props> = { a: 5 };
+// const obj3: MyRequired<Props> = { a: 5 };

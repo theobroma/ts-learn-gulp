@@ -13,6 +13,6 @@ const mytodo: MyReadonly<Todo2> = {
     title: "Delete inactive users",
 };
 
-
-todo.title = "Hello";
-mytodo.title = "Hello";
+// Uncomment to see error
+// todo.title = "Hello";
+// mytodo.title = "Hello";
