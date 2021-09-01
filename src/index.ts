@@ -1,9 +1,3 @@
-// enum TagActions {
-//   Search = "TAGS_SEARCH",
-//   SearchUpdate = "TAGS_SEARCH_UPDATE",
-//   SearchError = "TAGS_SEARCH_ERROR"
-// }
-
 function Enumerable(
   target: any,
   propertyKey: string,
@@ -31,6 +25,3 @@ console.log("-- looping --");
 for (let key in car) {
   console.log("key: " + key);
 }
-
-// import { sayHello } from "./greet";
-// console.log(sayHello("TypeScript"));
