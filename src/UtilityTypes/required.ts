@@ -1,4 +1,4 @@
-type MyRequired<T> = { [P in keyof T]-?: T[P]; }
+type MyRequired<T> = { [P in keyof T]-?: T[P] };
 
 interface Props {
   a?: number;
