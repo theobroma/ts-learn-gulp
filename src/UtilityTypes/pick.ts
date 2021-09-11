@@ -8,5 +8,5 @@ export type Point3D = {
   z: number;
 };
 
-export type Point2D = Pick<Point3D, "x" | "y">;
-export type MyPoint2D = MyPick<Point3D, "x" | "y">;
+export type Point2D = Pick<Point3D, 'x' | 'y'>;
+export type MyPoint2D = MyPick<Point3D, 'x' | 'y'>;

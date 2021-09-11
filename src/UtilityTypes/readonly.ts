@@ -6,11 +6,11 @@ interface Todo2 {
 }
 
 const todo: Readonly<Todo2> = {
-  title: "Delete inactive users",
+  title: 'Delete inactive users',
 };
 
 const mytodo: MyReadonly<Todo2> = {
-  title: "Delete inactive users",
+  title: 'Delete inactive users',
 };
 
 // Uncomment to see error

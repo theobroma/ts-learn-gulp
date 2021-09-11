@@ -6,7 +6,7 @@
 const angelMowersPromise = new Promise<string>((resolve, reject) => {
   // a resolved promise after certain hours
   setTimeout(() => {
-    resolve("We finished mowing the lawn");
+    resolve('We finished mowing the lawn');
   }, 100000); // resolves after 100,000ms
   reject("We couldn't mow the lawn");
 });
@@ -18,26 +18,26 @@ const myPaymentPromise = new Promise<Record<string, number | string>>(
     setTimeout(() => {
       resolve({
         amount: 1000,
-        note: "Thank You",
+        note: 'Thank You',
       });
     }, 100000);
     // reject with 0 Euro and an unstatisfatory note
     reject({
       amount: 0,
-      note: "Sorry Lawn was not properly Mowed",
+      note: 'Sorry Lawn was not properly Mowed',
     });
-  }
+  },
 );
 
 // ===================================--Sequential execution with .then--=======================================
 
-const api = "http://dummy.restapiexample.com/api/v1/employees";
+const api = 'http://dummy.restapiexample.com/api/v1/employees';
 fetch(api)
   .then((response) => response.json())
   .then((employees) =>
     employees
       .forEach((employee: any) => console.log(employee.id)) // logs all employee id
-      .catch((error: any) => console.log(error.message))
+      .catch((error: any) => console.log(error.message)),
   ); // logs any error from the promise
 
 // ===================================--async/await--=======================================
@@ -54,8 +54,8 @@ const myAsync = async (): Promise<Record<string, number | string>> => {
   return response;
 };
 // ===================================--Concurrent execution with Promise.all--=======================================
-const baseApi = "https://reqres.in/api/users?page=1";
-const userApi = "https://reqres.in/api/user";
+const baseApi = 'https://reqres.in/api/users?page=1';
+const userApi = 'https://reqres.in/api/user';
 
 interface Employee {
   id: number;
@@ -73,7 +73,7 @@ const fetchAllEmployees = async (url: string): Promise<Employee[]> => {
 
 const fetchEmployee = async (
   url: string,
-  id: number
+  id: number,
 ): Promise<Record<string, string>> => {
   const response = await fetch(`${url}/${id}`);
   const { data } = await response.json();
@@ -81,7 +81,7 @@ const fetchEmployee = async (
 };
 
 const generateEmail = (name: string): string => {
-  return `${name.split(" ").join(".")}@company.com`;
+  return `${name.split(' ').join('.')}@company.com`;
 };
 
 const runAsyncFunctions = async () => {
@@ -92,7 +92,7 @@ const runAsyncFunctions = async () => {
         const userName = await fetchEmployee(userApi, user.id);
         const emails = generateEmail(userName.name);
         return emails;
-      })
+      }),
     );
   } catch (error) {
     console.log(error);

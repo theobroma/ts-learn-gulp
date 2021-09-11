@@ -6,6 +6,7 @@
     "scripts": {
         "build": "tsc",
         "gulp": "gulp",
+        "format": "prettier --write src/**/*.{js,jsx,ts,tsx,yml,json,css,scss,md}",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -16,6 +17,7 @@
         "gulp": "^4.0.2",
         "gulp-notify": "^4.0.0",
         "gulp-typescript": "^5.0.1",
+        "prettier": "^2.4.0",
         "typescript": "^4.4.2"
     }
 }
