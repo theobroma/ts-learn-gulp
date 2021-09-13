@@ -1,3 +1,5 @@
+// https://mariusschulz.com/blog/the-omit-helper-type-in-typescript
+
 interface Todo3 {
   title: string;
   description: string;
@@ -24,5 +26,3 @@ const todoInfo3: TodoInfo3 = {
   // completed: false,
   // createdAt: 999,
 };
-
-// TODO implement MyOmit
