@@ -2,10 +2,10 @@
   "name": "ts-learn-gulp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "keywords": [],
-  "author": "Aleksandr Siryi",
   "license": "ISC",
+  "author": "Aleksandr Siryi",
+  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "gulp": "gulp",
